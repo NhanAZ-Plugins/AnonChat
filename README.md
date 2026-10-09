@@ -19,7 +19,7 @@ The minimum server patch release has not been established independently. Compati
 
 ## Installation
 
-1. Download `AnonChat.phar` from a successful [Build workflow](https://github.com/NhanAZ-Plugins/AnonChat/actions/workflows/build.yml) or a verified GitHub release when available.
+1. Download `AnonChat.phar` from the [v1.0.3 release](https://github.com/NhanAZ-Plugins/AnonChat/releases/tag/v1.0.3).
 2. Place the PHAR in the server's `plugins` directory.
 3. Start the server. The plugin creates `config.yml` in its data directory.
 4. Send `[*] hello` as a player to use the anonymous broadcast.
@@ -35,7 +35,7 @@ Invalid setting types fall back to the defaults. Player supplied ampersand codes
 
 ## Development and validation
 
-CI uses [DevTools v1.0.1](https://github.com/NhanAZ/DevTools/releases/tag/v1.0.1) with a pinned Axolotl-PM source revision. It runs PHPStan at level max, builds a standalone PHAR, checks its manifest, source, configuration and license, then uploads the PHAR with build metadata. The exact server and DevTools revisions are recorded in the workflow and linked CI run.
+CI uses [DevTools v1.0.1](https://github.com/NhanAZ/DevTools/releases/tag/v1.0.1) with a pinned Axolotl-PM source revision. It runs PHPStan at level max, builds a standalone PHAR, checks its manifest, source, configuration and license, then uploads the PHAR with build metadata. The exact server and DevTools revisions are recorded in the workflow and its run history.
 
 To build locally with the same DevTools release, run:
 
