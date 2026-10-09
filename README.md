@@ -35,7 +35,7 @@ Invalid setting types fall back to the defaults. Player supplied ampersand codes
 
 ## Development and validation
 
-CI uses [DevTools v1.0.1](https://github.com/NhanAZ/DevTools/releases/tag/v1.0.1) with a pinned Axolotl-PM source revision. It runs PHPStan at level max, builds a standalone PHAR, checks its manifest, source, configuration and license, then uploads the PHAR with build metadata. The exact server and DevTools revisions are recorded in the workflow and its run history.
+CI uses [DevTools](https://github.com/NhanAZ/DevTools) with a pinned Axolotl-PM source revision. It runs PHPStan at level max, builds a standalone PHAR, checks its manifest, source, configuration and license, then uploads the PHAR with build metadata. The exact server and DevTools revisions are recorded in the workflow and its run history.
 
 To build locally with the same DevTools release, run:
 
