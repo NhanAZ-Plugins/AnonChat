@@ -9,7 +9,7 @@ if (!is_file($artifact) || !is_file($metadataPath)) {
 }
 
 $metadata = json_decode((string) file_get_contents($metadataPath), true, 512, JSON_THROW_ON_ERROR);
-if (!is_array($metadata) || ($metadata['success'] ?? false) !== true || ($metadata['tool']['version'] ?? null) !== '1.0.1') {
+if (!is_array($metadata) || ($metadata['success'] ?? false) !== true || ($metadata['tool']['version'] ?? null) !== '1.0.15') {
 	throw new RuntimeException('Unexpected DevTools build result');
 }
 if (($metadata['data']['plugin']['name'] ?? null) !== 'AnonChat' || ($metadata['data']['plugin']['version'] ?? null) !== '1.0.3') {
