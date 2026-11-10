@@ -40,7 +40,7 @@ jobs:
 
       - name: Run PHPStan max and build PHAR
         id: build
-        uses: AxolotlBucketLabs/DevTools@v3
+        uses: AxolotlBucketLabs/DevTools@latest
         with:
           project: .
           output: build
